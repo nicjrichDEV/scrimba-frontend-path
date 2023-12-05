@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  margin: 0;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 385px;
+  width: 575px;
+  border-radius: 16px;
+  background-color: #1B244A;
+  position: relative;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 155px;
+  height: 250px;
+  text-align: center;
+}
+
+.header {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 36px;
+  color: #EEE;
+  margin: 0;
+}
+
+.scoreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: #080001;
+  border-radius: 5px;
+}
+
+.scoreText {
+  margin: 16px 0 0 0;
+  line-height: 90px;
+  color: #F94F6D;
+  font-size: 90px;
+  font-family: 'Cursed Timer ULiL';
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 45px;
+  height: 45px;
+  color: #9AABD8;
+  background-color: transparent;
+  border: 2px solid #9AABD8;
+  border-radius: 5px;
+  font-family: 'Cursed Timer ULiL';
+  font-size: 18px;
+  text-align: center;
+}
+
+.resetScores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100px;
+  margin-top: 205px;
+}

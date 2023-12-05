@@ -1,0 +1,117 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 8px;
+    align-items: center;
+}
+
+.logo {
+    height: 56px;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.post {
+    border-top: 1px solid #C6C6C6;
+
+}
+
+.post-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 8px;
+    align-items: center;
+}
+
+.post-header img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.post-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 8px;
+}
+
+.post-header-text h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.post-header-text p {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.post-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+.post-footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    opacity: 0.64;
+}
+
+.post-footer-likes {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.post-footer-likes p {
+    margin: 12px 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.profile-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.post-footer-comment p {
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+}

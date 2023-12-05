@@ -1,0 +1,18 @@
+@import url('colors.css');
+@import url('dimensions.css');
+
+body {
+    background-color: var(--gray4);
+    margin: var(--d0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    aspect-ratio: 16/9;
+    background-color: var(--gray1);
+    border-radius: var(--d16);
+    width: 480px;
+}

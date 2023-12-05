@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Basketball Scoreboard</title>
+</head>
+
+<body>
+  <div class="scoreboard">
+    <div class="column">
+      <h1 class="header">HOME</h1>
+      <div class="scoreContainer">
+        <p class="scoreText" id="homeScore"></p>
+      </div>
+      <div class="buttons">
+        <button onclick="home1()">+1</button>
+        <button onclick="home2()">+2</button>
+        <button onclick="home3()">+3</button>
+      </div>
+    </div>
+    <div class="column">
+      <h1 class="header">GUEST</h1>
+      <div class="scoreContainer">
+        <p class="scoreText" id="guestScore"></p>
+      </div>
+      <div class="buttons">
+        <button onclick="guest1()">+1</button>
+        <button onclick="guest2()">+2</button>
+        <button onclick="guest3()">+3</button>
+      </div>
+    </div>
+    <button class="resetScores" onclick="resetScores()">Reset</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

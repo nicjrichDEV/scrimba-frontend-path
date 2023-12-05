@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter.ttf) format('truetype');
+    font-weight: 100 1000;
+}
+
+
+
+body {
+    font-family: 'Inter';
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    flex-direction: column;
+    background: #111827;
+}
+
+.container {
+    width: 550px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #1F2937;
+    height: 698px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    width: 100%;
+    height: 278px;
+    background: #6943FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top h1 {
+    margin: 32px 0;
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: -0.84px;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    font-family: 'Inter';
+    width: 124px;
+    height: 58px;
+    border-radius: 4px;
+    background: transparent;
+    border: 2px solid #B295FF;
+    color: #FFF;
+    text-align: center;
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 58px;
+    margin-bottom: 24px;
+}
+
+input::placeholder {
+    color: #ffffff2c;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+button {
+    height: 40px;
+    width: 110px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    background: #FFF border;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Inter';
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.results {
+    padding: 24px;
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.results-container {
+    width: 502px;
+    height: 108px;
+    border-radius: 4px;
+    background: #273549;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.results-container h2 {
+    color: #CCC1FF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.results-container p {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}

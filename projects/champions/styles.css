@@ -1,0 +1,226 @@
+:root {
+    /* Colors */
+    --background-color: #1B1924;
+    --action-color: #28A9F1;
+    --action-text: #04131C;
+    --input-background: #444059;
+    --input-placeholder: #8F8F8F;
+    --white: #FFFFFF;
+
+    /* Radius */
+    --radius-default: 8px;
+
+    /* Type */
+    --type-decoration-family: 'Josefin Sans', sans-serif;
+    --type-decoration-weight: 700;
+    --type-utility-family: 'Inter', sans-serif;
+    --type-utility-weight: 400;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100dvh;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-top: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h5 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.container {
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+}
+
+.mark {
+    width: 88px;
+    height: 88px;
+    user-select: none;
+}
+
+h1 {
+    font-family: var(--type-decoration-family);
+    font-weight: var(--type-decoration-weight);
+    color: var(--white);
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+textarea {
+    margin-top: 24px;
+    width: 324px;
+    height: 124px;
+    min-height: 124px;
+    max-height: 324px;
+    resize: vertical;
+    border-radius: var(--radius-default);
+    background-color: var(--input-background);
+    border: none;
+    box-sizing: border-box;
+    padding: 16px;
+    font-family: var(--type-utility-family);
+    font-weight: var(--type-utility-weight);
+    font-size: 16px;
+    color: var(--white);
+}
+
+
+textarea::placeholder {
+    color: var(--input-placeholder);
+}
+
+textarea:focus {
+    outline: 2px solid var(--action-color);
+    outline-offset: 4px;
+}
+
+.from-to {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    gap: 12px;
+    width: 324px;
+}
+
+input {
+    height: 40px;
+    border-radius: var(--radius-default);
+    background-color: var(--input-background);
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-family: var(--type-utility-family);
+    font-weight: var(--type-utility-weight);
+    color: var(--white);
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: var(--input-placeholder);
+}
+
+input:focus {
+    outline: 2px solid var(--action-color);
+    outline-offset: 4px;
+}
+
+button {
+    vertical-align: text-bottom;
+    margin-top: 12px;
+    width: 324px;
+    height: 48px;
+    padding: 0;
+    border-radius: var(--radius-default);
+    border: none;
+    background-color: var(--action-color);
+    color: var(--white);
+    font-family: var(--type-decoration-family);
+    font-weight: var(--type-decoration-weight);
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+button:focus {
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
+}
+
+h2 {
+    font-family: var(--type-decoration-family);
+    font-weight: var(--type-decoration-weight);
+    color: var(--white);
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 324px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+li {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: var(--radius-default);
+    font-family: var(--type-utility-family);
+    font-weight: var(--type-utility-weight);
+    font-size: 12px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+li h5 {
+    font-family: var(--type-decoration-family);
+    font-weight: var(--type-decoration-weight);
+    font-size: 14px;
+}
+
+li>h5 {
+    margin-bottom: 4px;
+}
+
+li p {
+    line-height: 16px;
+}
+
+.card-footer {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.heart-default {
+    background-image: url('assets/heart-outline.svg');
+    width: 16px;
+    height: 16px;
+    display: block;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.heart-active {
+    background-image: url('assets/heart-filled.svg');
+    width: 16px;
+    height: 16px;
+    display: block;
+    transition: background-image 0.2s ease-in-out;
+}

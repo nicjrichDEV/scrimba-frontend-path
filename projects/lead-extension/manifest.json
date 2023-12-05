@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "version": "1.1",
+  "name": "Leads tracker",
+  "description": "Save links locally to track leads or anything else you need them for.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["tabs"]
+}

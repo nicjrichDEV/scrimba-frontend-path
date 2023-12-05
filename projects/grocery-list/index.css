@@ -1,0 +1,115 @@
+:root {
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+
+    --input-text: #432000;
+    --input-background: #DCE1EB;
+    --button-text: #FDFDFD;
+    --button-background: #AC485A;
+    --border-radius-default: 8px;
+    --gap-default: var(--space-2);
+    --min-width-default: 240px;
+    --button-hover-background: #432000;
+    --item-hover-background: #FFECC7;
+
+    /* List elements */
+    --list-item-background: #FFFDF8;
+    --list-item-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    --list-item-padding-leftright: var(--space-4);
+    --list-item-padding-topbottom: var(--space-2);
+
+    /* Type */
+    --font-family: 'Rubik', sans-serif;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: #EEF0F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    align-items: center;
+}
+
+.container img {
+    width: 120px;
+    margin-bottom: var(--space-6);
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-default);
+}
+
+input {
+    font-family: var(--font-family);
+    color: var(--input-text);
+    background-color: var(--input-background);
+    border-radius: var(--border-radius-default);
+    border: none;
+    height: 40px;
+    min-width: var(--min-width-default);
+    padding: 0 16px;
+    text-align: center;
+}
+
+button {
+    font-family: var(--font-family);
+    color: var(--button-text);
+    background-color: var(--button-background);
+    border-radius: var(--border-radius-default);
+    font-weight: 600;
+    border: none;
+    height: 40px;
+    min-width: var(--min-width-default);
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--button-hover-background);
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-default);
+}
+
+ul li {
+    display: inline;
+    flex-grow: 1;
+    text-align: center;
+    background-color: var(--list-item-background);
+    box-shadow: var(--list-item-box-shadow);
+    border-radius: var(--border-radius-default);
+    padding: var(--list-item-padding-topbottom) var(--list-item-padding-leftright);
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+ul li:hover {
+    background-color: var(--item-hover-background);
+}

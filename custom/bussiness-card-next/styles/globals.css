@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom-pos {
+    top: -64px;
+    right: -64px;
+}
