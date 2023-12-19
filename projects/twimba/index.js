@@ -1,13 +1,7 @@
 import { tweetsData } from "./data/tweetsData.js";
+import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 
-const tweetInput = document.getElementById("tweet-input");
-const tweetBtn = document.getElementById("tweet-btn");
 const feed = document.getElementById("feed");
-
-// Adds an event listener to the tweet button
-tweetBtn.addEventListener("click", () => {
-  console.log("Clicked");
-});
 
 // Adds event listeners to the document
 document.addEventListener("click", (e) => {
@@ -23,6 +17,8 @@ document.addEventListener("click", (e) => {
   } else if (target.dataset.retweet) {
     const tweetId = target.dataset.retweet;
     handleRetweetClick(tweetId);
+  } else if (target.id === "tweet-btn") {
+    handleTweetClick();
   }
 });
 
@@ -54,6 +50,30 @@ function handleRetweetClick(tweetId) {
   }
   tweetObj.isRetweeted = !tweetObj.isRetweeted;
   render();
+}
+
+function handleTweetClick() {
+  const tweetInput = document.getElementById("tweet-input");
+  const tweetText = tweetInput.value;
+
+  if (tweetText === "") {
+    alert("Please enter a tweet");
+  } else {
+    const newTweet = {
+      handle: `@Scrimba`,
+      profilePic: `images/scrimbalogo.png`,
+      likes: 0,
+      retweets: 0,
+      tweetText: tweetText,
+      replies: [],
+      isLiked: false,
+      isRetweeted: false,
+      uuid: uuidv4(),
+    };
+    tweetsData.unshift(newTweet);
+    tweetInput.value = "";
+    render();
+  }
 }
 
 // Returns the HTML for the feed
