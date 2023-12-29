@@ -20,7 +20,6 @@ document.addEventListener("click", (e) => {
         break;
     }
   }
-
   console.log(cart);
 });
 

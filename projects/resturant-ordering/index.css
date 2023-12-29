@@ -118,3 +118,19 @@ p {
     justify-content: center;
     font-size: 56px;
 }
+
+.add-to-cart:hover {
+    background-color: var(--divider);
+}
+
+#cart {
+    display: none;
+}
+
+#payment {
+    display: none;
+}
+
+#confirmation {
+    display: none;
+}
